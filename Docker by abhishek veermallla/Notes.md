@@ -80,7 +80,8 @@ Also volume offers an added advantage we can use any external sources like s3 or
 
 Both are same and there is only the syntax difference
 
-*docker volume create manu
+*docker volume create manu*
+
 *docker volume inspect manu
 *docker volume rm manu
 *docker volume rm manu renu
