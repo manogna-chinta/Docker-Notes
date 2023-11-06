@@ -55,4 +55,38 @@ Also volume offers an added advantage we can use any external sources like s3 or
 * docker -v <  >
 * docker --mount
 
+Both are same and there is only the syntax difference.
+
+Containers are ephemeral(short-lived) so when the container is down the log file also get deleted , so it came up with 
+1. Bind Mounts
+2. volumes
+
+
+|-----------|
+|  -------  |
+|  |     |  |
+|  | C1  |  |
+|  |-----|  |
+|    Host   |
+|-----------|  
+
+Here C1 means container, The c1 contains some folder like manu and it can mount to any folder in the / in the app directory (/app) of host system and using bind mounts it can store the logs or any data
+
+Volumes also do the same thing but it offers a better life cycle and using volumes we can manage everything on the Cli, 
+Also volume offers an added advantage we can use any external sources like s3 or something and store the data which is an added advantage and also high performance
+
+* docker -v <  >
+* docker --mount
+
 Both are same and there is only the syntax difference
+
+docker volume create manu
+docker volume inspect manu
+docker volume rm manu
+docker volume rm manu renu
+docker build -t myfirst-docker-file .
+docker volume create manu
+docker run -d --mount source=manu,target=/app nginx:latest
+docker ps
+docker inspect <container-id>
+docker volume rm manu (error comes) first stop the container , delete it and then delete volume
