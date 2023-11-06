@@ -31,4 +31,5 @@ A distroless image is a light-weight docker image that will have only run-time e
 
 previously we're using ubuntu base images which were exposed to some vulnerabilities so we moved to distroless images 
 eg: if you using python application in your org. we moved to python distroless image which only had python run time which usuallly don't have find,ls curl it was providing us highest level of security and we after implementing distroless images we can say our application is not prone to any o.s related issues
+
 (Revise docker multi stage builds if needed)
