@@ -82,12 +82,20 @@ Both are same and there is only the syntax difference
 
 *docker volume create manu*
 
-*docker volume inspect manu
-*docker volume rm manu
-*docker volume rm manu renu
-*docker build -t myfirst-docker-file .
-*docker volume create manu
-*docker run -d --mount source=manu,target=/app nginx:latest
-*docker ps
-*docker inspect <container-id>
-*docker volume rm manu (error comes) first stop the container , delete it and then delete volume
+*docker volume inspect manu*
+
+*docker volume rm manu*
+
+*docker volume rm manu renu*
+
+*docker build -t myfirst-docker-file . *
+
+*docker volume create manu*
+
+*docker run -d --mount source=manu,target=/app nginx:latest*
+
+*docker ps*
+
+*docker inspect <container-id>*
+
+*docker volume rm manu (error comes) first stop the container , delete it and then delete volume*
