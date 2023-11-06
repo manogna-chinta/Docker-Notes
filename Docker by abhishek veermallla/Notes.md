@@ -39,7 +39,7 @@ Containers are ephemeral(short-lived) so when the container is down the log file
 2. volumes
 
 
-|-----------|
+| --------- |
 |  -------  |
 |  |     |  |
 |  | C1  |  |
