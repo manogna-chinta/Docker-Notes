@@ -15,3 +15,7 @@ Docker is very much dependent on docker engine which is prone to single point of
 https://github.com/manogna-chinta/Docker-Zero-to-Hero
 
 Docker deomon runs with root user and it's monolithic process
+
+Difference between Entrypoint and cmd ?
+
+Both are used to start cmd ,whenevr somebody run docker both entrypoint and cmd executes as starting commands, But Entrypoint is something that you cannot change, where as cmd is configurable during the runtime
