@@ -33,3 +33,26 @@ previously we're using ubuntu base images which were exposed to some vulnerabili
 eg: if you using python application in your org. we moved to python distroless image which only had python run time which usuallly don't have find,ls curl it was providing us highest level of security and we after implementing distroless images we can say our application is not prone to any o.s related issues
 
 (Revise docker multi stage builds if needed)
+
+Containers are ephemeral(short-lived) so when the container is down the log file also get deleted , so it came up with 
+1. Bind Mounts
+2. volumes
+
+
+|-----------|
+|  -------  |
+|  |     |  |
+|  | C1  |  |
+|  |-----|  |
+|    Host   |
+|-----------|  
+
+Here C1 means container, The c1 contains some folder like manu and it can mount to any folder in the / in the app directory (/app) of host system and using bind mounts it can store the logs or any data
+
+Volumes also do the same thing but it offers a better life cycle and using volumes we can manage everything on the Cli, 
+Also volume offers an added advantage we can use any external sources like s3 or something and store the data which is an added advantage and also high performance
+
+* docker -v <  >
+* docker --mount
+
+Both are same and there is only the syntax difference
