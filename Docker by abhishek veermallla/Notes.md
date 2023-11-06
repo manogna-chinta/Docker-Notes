@@ -19,3 +19,16 @@ Docker deomon runs with root user and it's monolithic process
 Difference between Entrypoint and cmd ?
 
 Both are used to start cmd ,whenevr somebody run docker both entrypoint and cmd executes as starting commands, But Entrypoint is something that you cannot change, where as cmd is configurable during the runtime
+
+Multistage builds are :
+Multistage builds , distroless builds
+
+A distroless image is a light-weight docker image that will have only run-time environments
+
+* Big advantage for distroless image is security
+
+* what is one of the production issue that you faced with docker? and how did you solved it
+
+previously we're using ubuntu base images which were exposed to some vulnerabilities so we moved to distroless images 
+eg: if you using python application in your org. we moved to python distroless image which only had python run time which usuallly don't have find,ls curl it was providing us highest level of security and we after implementing distroless images we can say our application is not prone to any o.s related issues
+(Revise docker multi stage builds if needed)
