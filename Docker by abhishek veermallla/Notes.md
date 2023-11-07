@@ -108,6 +108,9 @@ There are other networks :
 2. overlay networking
 
    *docker network rm test*
+   
    *docker run -d --name host-demo --network=host nginx:latest*
+   
    *docker inspect host-demo*
+   
    It shows no ip address bcoz it is binded with the host network itself
