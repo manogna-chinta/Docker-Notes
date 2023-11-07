@@ -119,4 +119,4 @@ There are other networks :
    
    It shows no ip address bcoz it is binded with the host network itself
 
-
+Difference btw add and copy ?
