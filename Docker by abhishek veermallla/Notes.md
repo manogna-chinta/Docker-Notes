@@ -20,6 +20,9 @@ Difference between Entrypoint and cmd ?
 
 Both are used to start cmd ,whenevr somebody run docker both entrypoint and cmd executes as starting commands, But Entrypoint is something that you cannot change, where as cmd is configurable during the runtime
 
+what is multi stage build ? 
+Multi stage build allows you to build your docker container in multiple stages, allowing you to copy artifacts from one stage to other. The major advantage of this is to build lightweight containers.
+
 Multistage builds are :
 Multistage builds , distroless builds
 
@@ -115,3 +118,5 @@ There are other networks :
    *docker inspect host-demo*
    
    It shows no ip address bcoz it is binded with the host network itself
+
+
