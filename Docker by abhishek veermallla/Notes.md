@@ -99,3 +99,15 @@ Both are same and there is only the syntax difference
 *docker inspect <container-id>*
 
 *docker volume rm manu (error comes) first stop the container , delete it and then delete volume*
+
+Docker uses bridge networking , the docker has one ip and the host has another it uses bridge to maintain the communication btw them
+In general it is veth or docker 0
+
+There are other networks :
+1. host networking 
+2. overlay networking
+
+   *docker network rm test*
+   *docker run -d --name host-demo --network=host nginx:latest*
+   *docker inspect host-demo*
+   It shows no ip address bcoz it is binded with the host network itself
