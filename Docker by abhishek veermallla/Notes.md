@@ -102,6 +102,7 @@ Both are same and there is only the syntax difference
 
 Docker uses bridge networking , the docker has one ip and the host has another it uses bridge to maintain the communication btw them
 In general it is veth or docker 0
+The veth0 of one container talk to veth0 of another container throught Docker0, which is prone to network issues and so we can use custom bridge network 
 
 There are other networks :
 1. host networking 
