@@ -108,7 +108,7 @@ One major difference between `ADD` and `COPY` is that if you add a file in the .
 
 ### Real-Time Challenges with Docker
 
-1. Docker is a single demon process which can cause a single point of failure if the docker demon goes down for some reason, all the applications are down . The alternative for this is Podman. We can use the same commands like run build and all this. But the advantage of using pod money is it doesn't have single point of failure.
+1. Docker is a single demon process which can cause a single point of failure if the docker demon goes down for some reason, all the applications are down . The alternative for this is Podman. We can use the same commands like run build and all this. But the advantage of using pod man is it doesn't have single point of failure.
 
 2. Docker demon runs as a root user, which is a security threat. Any process running as a root can have adverse effects. when it is compromised for security reason. It can impact other applications or containers on the host.
 
