@@ -1,0 +1,22 @@
+import pandas as pd
+
+# Sample DataFrames (replace with actual data)
+old_df = pd.DataFrame({
+    'address': ['123 Main St', '456 Oak St', '789 Pine St'],
+    'city': ['NY', 'LA', 'SF'],
+    'zip': ['10001', '90001', '94101']
+})
+
+new_df = pd.DataFrame({
+    'address': ['456 Oak St', '789 Pine St', '101 Maple St'],
+    'city': ['LA', 'SF', 'CHI'],
+    'zip': ['90001', '94101', '60601']
+})
+
+# Concatenate both DataFrames and keep only new rows
+combined = pd.concat([old_df, new_df]).drop_duplicates(keep=False)
+
+# Extract only new rows from new_df
+new_only_df = combined[combined.isin(new_df.to_dict(orient='list')).all(axis=1)]
+
+print(new_only_df)
